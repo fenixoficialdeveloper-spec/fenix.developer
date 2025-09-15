@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Restaurante - Experiência Gastronômica Premium</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="#" class="logo">Seu Restaurante</a>
+                
+                <div class="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                
+                <nav class="nav">
+                    <div class="close-toggle">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    
+                    <ul class="nav-list">
+                        <li><a href="#" class="nav-link">Início</a></li>
+                        <li><a href="#about" class="nav-link">Sobre</a></li>
+                        <li><a href="#menu" class="nav-link">Menu</a></li>
+                        <li><a href="#gallery" class="nav-link">Galeria</a></li>
+                        <li><a href="#contact" class="nav-link">Contato</a></li>
+                        <li><a href="#reservation" class="btn">Reservas</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Uma Experiência Gastronômica Inesquecível</h1>
+            <p class="hero-subtitle">Descubra sabores únicos e atmosfera sofisticada em nosso restaurante premium</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn">Ver Menu</a>
+                <a href="#reservation" class="btn btn-outline">Fazer Reserva</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Nossa História</h2>
+            <p class="section-subtitle">Conheça a trajetória que nos tornou referência em gastronomia sofisticada</p>
+            
+            <div class="about-inner">
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/600x700" alt="Interior do restaurante">
+                </div>
+                
+                <div class="about-content">
+                    <h2>Bem-vindo ao Seu Restaurante</h2>
+                    <p>Fundado em 2010, nosso restaurante nasceu da paixão pela alta gastronomia e pelo desejo de criar experiências memoráveis para nossos clientes. Ao longo dos anos, nos consolidamos como um destino para quem aprecia sabores refinados e atendimento impecável.</p>
+                    
+                    <p>Nossa filosofia é simples: utilizar os melhores ingredientes, preparados com técnicas precisas e criatividade, resultando em pratos que surpreendem e encantam os paladares mais exigentes.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <div>
+                                <h4>Culinária Autoral</h4>
+                                <p>Pratos exclusivos desenvolvidos por nossos chefs</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-wine-glass-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Adega Selecionada</h4>
+                                <p>Vinhos nacionais e importados cuidadosamente escolhidos</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div>
+                                <h4>Ambiente Aconchegante</h4>
+                                <p>Decoração elegante e atmosfera intimista</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#reservation" class="btn">Reserve sua Mesa</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-title">Nosso Menu</h2>
+            <p class="section-subtitle">Descubra nossa seleção de pratos preparados com ingredientes frescos e selecionados</p>
+            
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="entradas">Entradas</button>
+                <button class="filter-btn" data-filter="principais">Pratos Principais</button>
+                <button class="filter-btn" data-filter="sobremesas">Sobremesas</button>
+                <button class="filter-btn" data-filter="bebidas">Bebidas</button>
+            </div>
+            
+            <div class="menu-grid">
+                <!-- Item 1 -->
+                <div class="menu-item" data-category="principais">
+                    <div class="menu-item-image">
+                        <img src="https://via.placeholder.com/400x300" alt="Prato Principal 1">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-title">Filé Mignon com Molho de Vinho</h3>
+                        <p class="menu-item-desc">Corte premium de costela, grelhado ponto a ponto, acompanhado de molho redução de vinho tinto e legumes sazonais.</p>
+                        <div class="menu-item-price">R$ 89,90</div>
+                    </div>
+                </div>
+                
+                <!-- Item 2 -->
+                <div class="menu-item" data-category="entradas">
+                    <div class="menu-item-image">
+                        <img src="https://via.placeholder.com/400x300" alt="Entrada 1">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-title">Carpaccio de Beterraba</h3>
+                        <p class="menu-item-desc">Finas fatias de beterraba marinadas, queijo de cabra, nozes e molho de limão siciliano.</p>
+                        <div class="menu-item-price">R$ 32,90</div>
+                    </div>
+                </div>
+                
+                <!-- Item 3 -->
+                <div class="menu-item" data-category="sobremesas">
+                    <div class="menu-item-image">
+                        <img src="https://via.placeholder.com/400x300" alt="Sobremesa 1">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-title">Soufflé de Chocolate</h3>
+                        <p class="menu-item-desc">Clássico soufflé de chocolate belga acompanhado de sorvete de baunilha artesanal.</p>
+                        <div class="menu-item-price">R$ 28,50</div>
+                    </div>
+                </div>
+                
+                <!-- Item 4 -->
+                <div class="menu-item" data-category="principais">
+                    <div class="menu-item-image">
+                        <img src="https://via.placeholder.com/400x300" alt="Prato Principal 2">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-title">Risotto de Cogumelos Silvestres</h3>
+                        <p class="menu-item-desc">Risotto cremoso com mix de cogumelos silvestres, finalizado com trufa e parmesão.</p>
+                        <div class="menu-item-price">R$ 67,90</div>
+                    </div>
+                </div>
+                
+                <!-- Item 5 -->
+                <div class="menu-item" data-category="bebidas">
+                    <div class="menu-item-image">
+                        <img src="https://via.placeholder.com/400x300" alt="Bebida 1">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-title">Coquetel Signature</h3>
+                        <p class="menu-item-desc">Nossa assinatura em forma de drink: gim, licor de lavanda, suco de limão siciliano e espuma de água florida.</p>
+                        <div class="menu-item-price">R$ 36,00</div>
+                    </div>
+                </div>
+                
+                <!-- Item 6 -->
+                <div class="menu-item" data-category="entradas">
+                    <div class="menu-item-image">
+                        <img src="https://via.placeholder.com/400x300" alt="Entrada 2">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-title">Bruschetta Trio</h3>
+                        <p class="menu-item-desc">Três variações de bruschetta: tomate e manjericão, cogumelos trufados e abobrinha com queijo feta.</p>
+                        <div class="menu-item-price">R$ 38,50</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">O Que Nossos Clientes Dizem</h2>
+            <p class="section-subtitle">Depoimentos de quem já viveu a experiência do nosso restaurante</p>
+            
+            <div class="testimonials-slider">
+                <!-- Testimonial 1 -->
+                <div class="testimonial">
+                    <p class="testimonial-text">"Uma experiência gastronômica incrível! Cada prato foi uma surpresa agradável, com sabores equilibrados e apresentação impecável. O atendimento foi perfeito, tornando a noite ainda mais especial."</p>
+                    <div class="testimonial-author">Maria Silva</div>
+                    <div class="testimonial-role">Cliente Frequente</div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial">
+                    <p class="testimonial-text">"Comemorei meu aniversário no restaurante e fiquei impressionado com a qualidade dos pratos e a atenção da equipe. O som ambiente e a decoração criam uma atmosfera única. Recomendo!"</p>
+                    <div class="testimonial-author">João Santos</div>
+                    <div class="testimonial-role">Crítico Gastronômico</div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial">
+                    <p class="testimonial-text">"O melhor restaurante da cidade! A harmonização de vinhos é perfeita e os pratos são obras de arte. Volto sempre que posso para experimentar as novidades do menu sazonal."</p>
+                    <div class="testimonial-author">Ana Costa</div>
+                    <div class="testimonial-role">Food Blogger</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Nossa Galeria</h2>
+            <p class="section-subtitle">Conheça nosso ambiente e alguns de nossos pratos especiais</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300" alt="Galeria 1">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus gallery-icon"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300" alt="Galeria 2">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus gallery-icon"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300" alt="Galeria 3">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus gallery-icon"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300" alt="Galeria 4">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus gallery-icon"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300" alt="Galeria 5">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus gallery-icon"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300" alt="Galeria 6">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus gallery-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <p class="section-subtitle">Estamos à disposição para tornar sua experiência inesquecível</p>
+            
+            <div class="contact-inner">
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Endereço</h4>
+                            <p>Av. Principal, 1234, Bairro Elegante<br>Cidade - Estado, CEP 01234-567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Telefone</h4>
+                            <p>(11) 3456-7890</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>contato@seurestaurante.com.br</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Horário de Funcionamento</h4>
+                            <p>Terça a Quinta: 18h às 23h<br>Sexta e Sábado: 18h às 00h<br>Domingo: 12h às 18h</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Envie uma Mensagem</h3>
+                    <form id="reservation">
+                        <div class="form-group">
+                            <input type="text" class="form-input" placeholder="Seu Nome" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" class="form-input" placeholder="Seu Email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="tel" class="form-input" placeholder="Seu Telefone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="date" class="form-input">
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="time" class="form-input">
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="number" class="form-input" placeholder="Número de Pessoas" min="1">
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea class="form-input" placeholder="Mensagem ou Pedidos Especiais"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Enviar Reserva</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-col">
+                    <h4>Seu Restaurante</h4>
+                    <p>Oferecendo uma experiência gastronômica única com pratos autorais, ambiente sofisticado e atendimento personalizado.</p>
+                    
+                    <div class="footer-social">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Início</a></li>
+                        <li><a href="#about" class="footer-link">Sobre Nós</a></li>
+                        <li><a href="#menu" class="footer-link">Menu</a></li>
+                        <li><a href="#gallery" class="footer-link">Galeria</a></li>
+                        <li><a href="#contact" class="footer-link">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Horário de Funcionamento</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Terça a Quinta: 18h - 23h</a></li>
+                        <li><a href="#" class="footer-link">Sexta e Sábado: 18h - 00h</a></li>
+                        <li><a href="#" class="footer-link">domingo 18;00</a></li>
+                        <li><a href="#" class="footer-link">domingo 18;00</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>footer-newsletter</h4>
+                    <p class="footer-newsletter">increv se </p>
+
+                    <form class="newslette-form">
+                        <input type="email" class="newsletter-input" placeholder="Seu email" required>
+                        <button type="submit" class="newsletter-btn">Inscrever</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Seu Restaurante. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
