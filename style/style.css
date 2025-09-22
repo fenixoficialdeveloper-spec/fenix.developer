@@ -1,12 +1,13 @@
 :root {
-    --color-primary: #0db893;
-    --color-primary-dark: #ffffff;
-    --color-black: #ffffff;
-    --color-white: #330369;
-    --color-gray: #000000;
-    --color-gray-dark: #132bfc;
-    --font-heading: 'Playfair Display', serif;
-    --font-body: 'Poppins', sans-serif;
+  --color-primary: #6A0DAD;        /* Roxo imperial — destaque principal */
+  --color-primary-dark: #330369;   /* Roxo profundo — hover, bordas */
+  --color-black: #0D0D0D;          /* Preto real — fundo principal */
+  --color-white: #F2F2F2;          /* Cinza claro — texto em fundo escuro */
+  --color-gray: #2C2C2C;           /* Grafite — cards, seções secundárias */
+  --color-gray-dark: #8A2BE2;      /* Lavanda escura — detalhes sutis */
+
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Poppins', sans-serif;
 }
 
 * {
